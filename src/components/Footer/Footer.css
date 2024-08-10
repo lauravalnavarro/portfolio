@@ -1,0 +1,12 @@
+/* Footer.css */
+footer {
+    background-color: #FEF9E7; /* Fondo crema */
+    color: #333; /* Color de texto oscuro */
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 4rem; /* Ajusta según la altura del footer */
+  }
+  
