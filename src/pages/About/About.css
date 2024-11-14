@@ -1,0 +1,85 @@
+/* Contenedor principal */
+.about-container {
+    background-color: #f4f7fc;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encabezado principal con animación */
+  .about-heading {
+    font-size: 2.5rem;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Párrafo de introducción */
+  .about-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Subencabezados */
+  .about-subheading {
+    color: #973aa8;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Listado de habilidades */
+  .about-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .about-list li {
+    font-size: 16px;
+    color: #555;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  
+  
+  /* Enlace de GitHub */
+  .about-link {
+    color: #973aa8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about-link:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  /* Efecto de transición para el enlace */
+  .about-link:focus {
+    color: #973aa8;
+    outline: none;
+  }
+  
+  /* Iconos en la lista de habilidades */
+.about-list li i {
+    color: #4a90e2; /* Color azul para los iconos */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 1.2rem; /* Tamaño de los iconos */
+  }
+  
+  /* Icono de GitHub */
+  .about-link i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+    font-size: 1.2rem; /* Tamaño del icono de GitHub */
+  }
+  

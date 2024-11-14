@@ -1,109 +1,99 @@
-/* Home.css */
-
-/* Estilos para el Hero Title con animación de tipeo */
 .hero-title {
-    font-family: 'Courier New', Courier, monospace; /* Fuente estilo código */
-    overflow: hidden; /* Oculta el texto que aún no se ha animado */
-    white-space: nowrap; /* Evita el salto de línea */
-    border-right: .15em solid #333; /* Línea de cursor */
-    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; /* Animaciones */
-    width: fit-content; /* Ajusta el ancho al contenido */
-  }
-  
-  /* Animación de tipeo */
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 35%; } /* Ajusta el ancho para que se adapte al contenido */
-  }
-  
-  /* Animación del parpadeo del cursor */
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #333; }
-  }
-  
-  /* Estilo cuando la animación de tipeo está completa */
-  .hero-title.typing-complete {
-    border-right: none; /* Elimina el cursor después de la animación */
-  }
-  
-  /* Estilos para el contenedor principal */
-  .home-container {
-    max-width: 1200px; /* Ajusta según tus necesidades */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 0 1rem; /* Añade padding horizontal */
-  }
-  
-  /* Estilos para el Hero Section */
-  .hero-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem; /* Espacio entre la imagen y el texto */
-    padding: 2rem 0;
-    background-color: #FEF9E7; /* Fondo crema para el contenido */
-  }
-  .hero-image{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid #333;
+  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+  width: fit-content;
+}
 
-    p {
-        font-size: 1.25rem;
-        margin: 1rem 0 0;
-        max-width: 80%; /* Limita el ancho del párrafo */
-      }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 35%; }
+}
 
-    img {
-        width: 300px; /* Ajusta el tamaño de la imagen según tu preferencia */
-        object-fit: cover; /* Asegura que la imagen mantenga su aspecto */
-        border-radius: 1%;
-      }
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
+}
 
-  }
-  
-  
-  
-  .hero-title {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .hero-description {
-    font-size: 1.25rem;
-    margin: 1rem 0 0;
-  }
-  
-  /* Estilos para la sección de proyectos */
-  .projects-section {
-    padding: 2rem;
-    background-color: #FEF9E7; /* Fondo crema para el contenido */
-  }
-  
-  .projects-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333; /* Color oscuro para el texto */
-  }
-  
-  /* Estilos para la sección de contacto */
-  .contact-section {
-    padding: 2rem;
-    background-color: #FEF9E7; /* Fondo crema para el contenido */
-    text-align: center; /* Centra el texto */
-  }
-  
-  .contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333; /* Color oscuro para el texto */
-  }
-  
-  .contact-section a {
-    color: #FFD700; /* Color dorado para el enlace */
-    text-decoration: none;
-  }
-  
-  .contact-section a:hover {
-    text-decoration: underline;
-  }
-  
+.hero-title.typing-complete {
+  border-right: none;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-color: white;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-image p {
+  font-size: 1.25rem;
+  margin: 1rem 0 0;
+  max-width: 80%;
+}
+
+.hero-image img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 1%;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  margin: 1rem 0 0;
+}
+
+.projects-section {
+  padding: 2rem;
+  background-color: white;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-section {
+  padding: 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-section a {
+  color: #973aa8
+  ;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
